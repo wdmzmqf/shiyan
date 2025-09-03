@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>小说注入器设置</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="novel-injector-settings">
+        <!-- 主控与状态模块 -->
+        <fieldset class="module-control">
+            <legend>主控与状态</legend>
+            <div class="control-item">
+                <label>
+                    <input type="checkbox" id="plugin-enabled">
+                    启用插件
+                </label>
+            </div>
+            <div class="status-display">
+                <div id="status-info">当前状态：未启用</div>
+            </div>
+        </fieldset>
+
+        <!-- 小说库管理模块 -->
+        <fieldset class="module-library">
+            <legend>小说库管理</legend>
+            <div class="library-item">
+                <select id="novel-list" size="5"></select>
+            </div>
+            <div class="library-controls">
+                <input type="file" id="novel-upload-file" accept=".txt">
+                <button id="novel-upload-btn">上传小说</button>
+                <button id="novel-load-btn">加载选中项</button>
+                <button id="novel-delete-btn">删除选中项</button>
+                <button id="reset-progress-btn">重置阅读进度</button>
+            </div>
+        </fieldset>
+
+        <!-- 注入与格式化模块 -->
+        <fieldset class="module-injection">
+            <legend>注入与格式化</legend>
+            <div class="injection-item">
+                <label for="chunk-size">目标字数：</label>
+                <input type="number" id="chunk-size" min="1" value="500">
+            </div>
+            <div class="injection-item">
+                <label>
+                    <input type="checkbox" id="content-hidden">
+                    隐藏内容
+                </label>
+            </div>
+            <div class="injection-item">
+                <label for="prefix-template">前缀格式模板：</label>
+                <textarea id="prefix-template" rows="3" placeholder="请输入前缀格式模板">{chapter} (段落 {start_para}-{end_para})</textarea>
+                <div class="template-help">
+                    可用占位符：{chapter}, {start_para}, {end_para}
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- 自动化模块 -->
+        <fieldset class="module-automation">
+            <legend>自动化</legend>
+            <div class="automation-item">
+                <label>
+                    <input type="checkbox" id="auto-send-enabled">
+                    启用自动发送模式
+                </label>
+            </div>
+            <div class="automation-item">
+                <label for="delay-seconds">回复后延迟（秒）：</label>
+                <input type="number" id="delay-seconds" min="0" value="3">
+            </div>
+        </fieldset>
+    </div>
+
+    <script src="./ui/renderer.js"></script>
+    <script src="./ui/interceptor.js"></script>
+    <script src="./ui/uiManager.js"></script>
+</body>
+</html>

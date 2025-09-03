@@ -1,0 +1,9 @@
+{
+  "name": "novel-injector",
+  "display_name": "小说注入器",
+  "author": "",
+  "description": "通过发送拦截，自动将本地小说逐块注入聊天，用于小说文生图等场景。",
+  "version": "1.0.0",
+  "has_server": true,
+  "has_client": true
+}

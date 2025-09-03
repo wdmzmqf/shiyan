@@ -1,0 +1,157 @@
+.novel-injector-settings {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.novel-injector-settings fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.novel-injector-settings legend {
+    font-weight: bold;
+    color: #333;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.control-item,
+.library-item,
+.injection-item,
+.automation-item {
+    margin-bottom: 10px;
+}
+
+.control-item label,
+.automation-item label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.control-item input[type="checkbox"],
+.automation-item input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+#plugin-enabled,
+#auto-send-enabled {
+    transform: scale(1.2);
+}
+
+#status-info {
+    padding: 10px;
+    background-color: #e8f4f8;
+    border: 1px solid #b8d4e8;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #2c5282;
+    margin-top: 10px;
+}
+
+#novel-list {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.library-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.library-controls button {
+    padding: 8px 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    flex: 1;
+    min-width: 120px;
+}
+
+.library-controls button:hover {
+    background-color: #357abd;
+}
+
+#novel-upload-file {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.injection-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.injection-item input[type="number"],
+.injection-item textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.injection-item textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+.template-help {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.automation-item input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.nj-prefix {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.nj-toggle-btn {
+    background-color: #50c878;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.nj-toggle-btn:hover {
+    background-color: #3eb489;
+}
+
+.nj-hidden-content {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px dashed #ccc;
+    border-radius: 3px;
+}
