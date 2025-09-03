@@ -1,0 +1,226 @@
+.quick-response-force-settings {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.quick-response-force-settings h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.quick-response-force-settings h3 {
+    color: #555;
+    margin: 15px 0 10px 0;
+}
+
+.setting-group {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* 开关样式 */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    vertical-align: middle;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+    background-color: #2196F3;
+}
+
+.switch input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.label-text {
+    margin-left: 70px;
+    line-height: 34px;
+    font-weight: bold;
+}
+
+/* 响应管理 */
+.response-management {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+#responseList {
+    flex: 1;
+    min-width: 200px;
+    height: 150px;
+}
+
+.response-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.response-actions button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    min-width: 100px;
+}
+
+.response-actions button:hover {
+    background-color: #45a049;
+}
+
+.response-actions button#editResponse {
+    background-color: #2196F3;
+}
+
+.response-actions button#editResponse:hover {
+    background-color: #1976D2;
+}
+
+.response-actions button#deleteResponse {
+    background-color: #f44336;
+}
+
+.response-actions button#deleteResponse:hover {
+    background-color: #da190b;
+}
+
+/* 表单样式 */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.text-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.text-area {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* 模态框样式 */
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.modal-actions {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.modal-actions button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#saveResponse {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#saveResponse:hover {
+    background-color: #45a049;
+}
+
+#cancelResponse {
+    background-color: #ccc;
+    color: #333;
+}
+
+#cancelResponse:hover {
+    background-color: #999;
+}
+
+/* 热键绑定显示 */
+.hotkey-binding {
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #e8f4f8;
+    border-radius: 3px;
+    font-size: 14px;
+}
