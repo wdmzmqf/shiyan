@@ -1,9 +1,0 @@
-{
-    "name": "quick_response_force",
-    "display_name": "快速响应部队",
-    "author": "AlbusKen",
-    "version": "1.0.0",
-    "description": "快速响应部队插件，用于快速发送预设回复",
-    "has_server": true,
-    "has_client": true
-}
