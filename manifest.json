@@ -1,0 +1,17 @@
+{
+    "name": "novel-injector",
+    "display_name": "小说注入器",
+    "version": "8.0.0",
+    "author": "Novel Injector Team",
+    "description": "终极的故事驱动型创作工具，允许用户将长篇小说无缝地整合进 SillyTavern 的聊天流中，主要服务于小说文生图等需要大量连续文本输入的创作场景。",
+    "minSillyTavernVersion": "1.10.0",
+    "requires": [],
+    "optional": [],
+    "loading_order": 100,
+    "js": "index.js",
+    "css": "style.css",
+    "persistent_files": [
+        "settings.json",
+        "novels/"
+    ]
+}
